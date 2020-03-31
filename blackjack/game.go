@@ -2,7 +2,6 @@ package blackjack
 
 import (
 	"errors"
-	"fmt"
 
 	"github.com/gophercises/deck"
 )
@@ -268,23 +267,23 @@ func endRound(g *Game, ai AI) {
 		case pBlackjack:
 			winnings = int(float64(winnings) * g.blackjackPayout)
 		case pScore > 21:
-			fmt.Println("You busted!")
+			// fmt.Println("You busted!")
 			winnings = -winnings
 		case dScore > 21:
-			fmt.Println("Dealer busted!")
+			// fmt.Println("Dealer busted!")
 		case pScore > dScore:
-			fmt.Println("You win!")
+			// fmt.Println("You win!")
 		case dScore > pScore:
-			fmt.Println("You lose")
+			// fmt.Println("You lose")
 			winnings = -winnings
 		case dScore == pScore:
-			fmt.Println("Draw")
+			// fmt.Println("Draw")
 			winnings = 0
 		}
 		g.balance += winnings
 
 	}
-	fmt.Println()
+	// fmt.Println()
 	ai.Results(allHands, g.dealer)
 	g.player = nil
 	g.dealer = nil
