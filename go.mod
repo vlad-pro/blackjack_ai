@@ -1,4 +1,4 @@
-module github.com/gophercises/blackjack_ai
+module github.com/vlad-pro/blackjack_ai
 
 go 1.13
 
