@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/gophercises/blackjack_ai/blackjack"
-	"github.com/gophercises/deck"
+	"github.com/vlad-pro/blackjack_ai/blackjack"
+	deck "github.com/vlad-pro/blackjack_deck"
 )
 
 type basicAI struct {

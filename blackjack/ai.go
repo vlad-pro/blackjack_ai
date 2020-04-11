@@ -3,7 +3,7 @@ package blackjack
 import (
 	"fmt"
 
-	"github.com/gophercises/deck"
+	deck "github.com/vlad-pro/blackjack_deck"
 )
 
 type AI interface {
